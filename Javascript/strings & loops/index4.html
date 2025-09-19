@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // Strings
+        let str = "Hello World";
+        let str1 = 'Hello Strings';
+        console.log(str[6]); // o
+        console.log(str1[7]); // t
+
+        //Template Literals 
+        let specialString = `This is a template literal`;
+        console.log(specialString);
+        console.log(typeof specialString);
+
+        // why we use template literals (` `)
+        let obj = {
+            item: "pen",
+            price: 25,
+        };
+        console.log("the cost of", obj.item, "is", obj.price, "rupees");
+        let output = `the cost of ${obj.item} is ${obj.price} rupees`;
+        console.log(output);
+
+        let string = `This is template string example ${1+2+3}`;
+        console.log(string);
+
+        /* escape character = \n for next line
+           \t for tab space     */
+          console.log("Hello\nWorld");
+          console.log("Hello\tWorld");
+
+          // uppercase
+          let str3 = "HelloWorld";
+          let newStr3 = str3.toUpperCase();
+          console.log(str3);
+          console.log(newStr3);
+
+          // lowercase
+          let str4 = "HelloWorld";
+           let newStr4 = str3.toLowerCase();
+          console.log(str4);
+          console.log(newStr4);
+
+          // string slice
+          let str5 = "String Slice";
+          console.log(str5.slice(2,9));  // from 2 to 9 
+
+          // string concat
+          let str6 = "hello";
+          let str7 = " world";
+          let add = str6.concat(str7);  // OR  let add = str6 + str7
+          console.log(add);
+
+          // replace 
+          let str8 ="hello";
+          console.log(str8.replace("h","y"));
+
+    </script>
+</head>
+
+<body>
+    <h1>Strings in JS </h1>
+    <h3>String is a sequence of characters used to represent text  <br>
+        A sequence of characters used to represent and manipulate text. <br>
+        strings are immutable, meaning their content cannot be changed after creation 
+    </h3>
+
+
+
+    <h1>Template Literals (Special type of string)</h1>
+    <h3>A way to have embedded expressions in strings</h3>
+    <p>
+        `This is a template literal`
+    </p>
+    <h2>String Interpolation</h2>
+    <h3>To create strings by doing substitution of placeholders</h3>
+    <p>
+        `string text $(expression) string text`
+    </p>
+
+    <!-- what is template literals ?
+    =>  it is string only but it is created from backticks ` `, basically used for embed expression -->
+
+    <h2>String methods  <br>
+        1. str.toUpperCase
+        2. str.toLowerCase
+        3. str.trim // remove extras spaces from first and last
+        4. str.slice(start, end?) // returns part of string
+        5. str1.concat(str1); // join strings
+        6. str.replace // replace
+    </h2>
+
+
+
+
+
+
+
+</body>
+
+</html>
