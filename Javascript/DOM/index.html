@@ -1,0 +1,71 @@
+<!-- 
+        <h1>DOM Manipulation</h1>
+        selecting with id
+        document.getElementById("myId")
+
+         selecting with class  - it returns html collection 
+        document.getElementByclass("myclass")
+
+        
+        selecting with tag
+        document.getElementByTagName("mytag")
+
+        Query Selector
+
+        document.querySelector("myId / myClass / tag")
+        returns first element
+
+        document.querySelectorAll("myId / myClass / tag")
+        returns a nodelist
+        
+        Properties
+        tagName: returns tag for element nodes
+        innerText: returns the text content of the element and all its children
+        innerHTMl: returns the plain text or html contents in the element
+        textContent: returns textual content even for hidden elements
+
+        -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM (Document Object Model)</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+        <h1 id="heading">DOM</h1>
+
+        <h4 class="heading-class">Document Object Model</h4>
+        <h4 class="heading-class">Document Object Model</h4>
+        <h4 class="heading-class">Document Object Model</h4>
+
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>2nd paragraph</p>
+        <button>Click me!</button>
+
+         <h2>old heading</h2>
+    <div> 
+        <ul>
+            <li>mango</li>
+            <li>banana</li>
+            <li>grapes</li>
+            <li>chiku</li>
+       </ul>
+   </div>
+
+   <!-- Create a h3 heading element with text-"Hello Javascript". Append "welcome to world" to this text using JS -->
+       <h3>Hello Javascript</h3>
+
+       <div class="box">Div1</div>
+       <div class="box">Div2</div>
+       <div class="box">Div3</div>
+        
+
+
+    <script src="script.js"></script>
+</body>
+</html>
